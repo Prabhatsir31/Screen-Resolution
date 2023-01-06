@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Screen Resolution</title>
+        <meta charset="UTF-8">
+    <script>
+        function send()
+        {
+            if((screen.width>=1024) && (screen.height>=768))
+            {
+                window.location="chess.html";
+            }
+            else
+            {
+                window.location="form.html";
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <h1>Screen Resolution Detection</h1>
+        <a href="javascript:alert('Your resolution is'+screen.width+'x'+screen.height);">Click For Your Screen Resolution</a>
+        <input type="button" value="Redirect Page" onclick="send();">
+    </body>
+</html>
